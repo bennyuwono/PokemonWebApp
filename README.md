@@ -1,7 +1,7 @@
 # Welcome to ReactJS-Pokémon WebApp <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 
 <p align="center">
-  <b>To visit a playground website click here: </b> https://react-pokedex-project.netlify.app/
+  <b>To visit a playground website click here: </b> https://pokemon-web-app-bennyuwono.vercel.app/
 </p>
 
 ## Technology
