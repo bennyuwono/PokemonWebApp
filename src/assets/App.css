@@ -1,0 +1,39 @@
+.App {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.refetch {
+  height: 80px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.refetch button {
+  padding: 8px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: solid 1px #bdbcbc;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.refetch button:hover {
+  -webkit-box-shadow: -2px 6px 13px -4px rgba(0, 0, 0, 0.52);
+  box-shadow: -2px 6px 13px -4px rgba(0, 0, 0, 0.52);
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    margin-top: 70px;
+  }
+
+  .refetch {
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,152 @@
+/* navbar class for web and mobile */
+.navbar {
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #00aa5b;
+  color: white;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.navbar__item {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-variant: small-caps;
+  margin: 0px 30px;
+}
+
+.navbar__item--title {
+  margin-left: 5vw;
+  font-size: 2rem;
+}
+
+.navbar__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 10px;
+  border: solid 0.5px white;
+  border-radius: 8px;
+}
+
+.navbar__item a:hover {
+  -webkit-box-shadow: 0px 6px 15px 7px rgba(151, 34, 21, 0.33);
+  box-shadow: 0px 6px 15px 7px rgba(151, 34, 21, 0.33);
+}
+
+.navbar__item a p {
+  margin: 0px;
+  margin-left: 20px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar__item a:link {
+  color: white;
+}
+
+/* visited link */
+.navbar__item a:visited {
+  color: white;
+}
+
+/* mouse over link */
+.navbar__item a:hover {
+  color: white;
+}
+
+/* selected link */
+.navbar__item a:active {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar__item--title {
+    font-size: 1.2rem;
+  }
+
+  /* hide navbar navigation if changed to mobile web */
+  .navbar-hide {
+    display: none;
+  }
+
+  /* put navbar navigation at screen bottom for mobile web */
+  .navbar-mobile {
+    display: flex;
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #00aa5b;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
+  }
+
+  .navbar-mobile__item a {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .navbar-mobile__item img {
+    max-width: 24px;
+    max-height: 24px;
+  }
+
+  .navbar-mobile__item a p {
+    font-size: 0.7rem;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  .navbar-mobile__item a:link {
+    color: white;
+  }
+
+  /* visited link */
+  .navbar-mobile__item a:visited {
+    color: white;
+  }
+
+  /* mouse over link */
+  .navbar-mobile__item a:hover {
+    color: white;
+  }
+
+  /* selected link */
+  .navbar-mobile__item a:active {
+    color: white;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .navbar-mobile {
+    display: none;
+  }
+}
